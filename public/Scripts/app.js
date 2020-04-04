@@ -19,7 +19,10 @@ class Contact
 //IIFE
 (function(){
 
-
+    function LoadButton()
+    {
+       
+    }
     function DisplayContactContent()
     {
         document.title = "WEBD6201 - Contact Us";
@@ -125,6 +128,12 @@ class Contact
             console.log(contactObject);
 
             clearForm();
+
+           //goto home page
+           router.get('/home', (req, res, next) => {
+            controllers.displayHome(res);
+          });
+
         });
 
         $("#resetButton").click((e)=>
@@ -149,6 +158,12 @@ class Contact
             case 'contact':
                 DisplayContactContent();
                 break;
+            case 'home':
+                LoadButton();
+                break;   
+            case '/':
+                LoadButton();
+            break;   
         }
     }
 

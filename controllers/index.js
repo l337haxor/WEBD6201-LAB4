@@ -9,6 +9,7 @@ module.exports.displayHome = (res) =>
 
 module.exports.displayAbout = (res) =>
 {
+ 
   res.render('index',
   {
     title: 'About'
