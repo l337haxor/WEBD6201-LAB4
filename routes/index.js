@@ -27,9 +27,9 @@ router.get('/contact', (req, res, next) =>
 });
 
 /* GET products page */
-router.get('/products', (req, res, next) =>
+router.get('/projects', (req, res, next) =>
   {
-    controllers.displayProducts(res);
+    controllers.displayProjects(res);
 });
 
 /* GET services page */
@@ -37,13 +37,6 @@ router.get('/services', (req, res, next) =>
   {
     controllers.displayServices(res);
 });
-
-/* GET login page */
-router.get('/login', (req, res, next) =>
-  {
-    controllers.displayLogin(res);
-});
-
 
 
 module.exports = router;
