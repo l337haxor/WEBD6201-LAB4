@@ -19,13 +19,24 @@ class Contact
 //IIFE
 (function(){
 
+    //Loads button  functionality
     function LoadButton()
     {
-       
+       $("#projectButton".click(() =>
+       {
+            /* GET products page */
+            router.get('/projects', (req, res, next) =>
+            {
+                controllers.displayProjects(res);
+            });
+        }));
     }
     function DisplayContactContent()
     {
         document.title = "WEBD6201 - Contact Us";
+
+        let contactObject = new Contact();
+
         function clearForm()
         {
             //document.getElementById("contactForm").reset();
@@ -130,9 +141,7 @@ class Contact
             clearForm();
 
            //goto home page
-           router.get('/home', (req, res, next) => {
-            controllers.displayHome(res);
-          });
+           
 
         });
 
