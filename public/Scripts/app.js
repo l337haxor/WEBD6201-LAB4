@@ -170,7 +170,7 @@ class Contact
                 console.log("home");
                 LoadButton();
                 break;   
-            case '/':
+            case '':
                 console.log("/");
                 LoadButton();
                 break;   
