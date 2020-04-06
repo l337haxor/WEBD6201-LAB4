@@ -22,14 +22,11 @@ class Contact
     //Loads button  functionality
     function LoadButton()
     {
-       $("#projectButton".click(() =>
-       {
-            /* GET products page */
-            router.get('/projects', (req, res, next) =>
-            {
-                controllers.displayProjects(res);
-            });
-        }));
+        $("#projectsButton").click((e)=>
+        {
+            console.log("clicked");
+            window.location.href = "/projects";
+        });
     }
     function DisplayContactContent()
     {
@@ -119,29 +116,31 @@ class Contact
                 e.stopPropagation();
                 console.log("form not valid");
             }
-
+            else
+            {
             
-            let contactName = $("#contactName").val();
-            let emailAddress = $("#emailAddress").val();
-            let contactNumber = $("#contactNumber").val();
-            let contactMessage = $("#contactMessage").val();
+                let contactName = $("#contactName").val();
+                let emailAddress = $("#emailAddress").val();
+                let contactNumber = $("#contactNumber").val();
+                let contactMessage = $("#contactMessage").val();
 
-            console.log(`Contact Name: ${contactName}`);
-            console.log(`Email Address: ${emailAddress}`);
-            console.log(`Contact Number: ${contactNumber}`);
-            console.log(`Contact Message: ${contactMessage}`);
+                console.log(`Contact Name: ${contactName}`);
+                console.log(`Email Address: ${emailAddress}`);
+                console.log(`Contact Number: ${contactNumber}`);
+                console.log(`Contact Message: ${contactMessage}`);
 
-            contactObject.contactName = contactName;
-            contactObject.emailAddress = emailAddress;
-            contactObject.contactNumber = contactNumber;
-            contactObject.contactMessage = contactMessage;
+                contactObject.contactName = contactName;
+                contactObject.emailAddress = emailAddress;
+                contactObject.contactNumber = contactNumber;
+                contactObject.contactMessage = contactMessage;
 
-            console.log(contactObject);
+                console.log(contactObject);
 
-            clearForm();
+                clearForm();
 
-           //goto home page
-           
+                //goto home page
+                window.location.href = "/home";
+            }
 
         });
 
@@ -168,11 +167,13 @@ class Contact
                 DisplayContactContent();
                 break;
             case 'home':
+                console.log("home");
                 LoadButton();
                 break;   
             case '/':
+                console.log("/");
                 LoadButton();
-            break;   
+                break;   
         }
     }
 

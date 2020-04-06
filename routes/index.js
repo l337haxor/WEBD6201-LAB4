@@ -38,5 +38,5 @@ router.get('/services', (req, res, next) =>
     controllers.displayServices(res);
 });
 
-
+//export the router object
 module.exports = router;
