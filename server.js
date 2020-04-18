@@ -5,7 +5,7 @@
  */
 
 let app = require('./server/config/app');
-let debug = require('debug')('webd6201-w2020-lesson9:server');
+let debug = require('debug')('webd6201-lab5:server');
 let http = require('http');
 
 /**

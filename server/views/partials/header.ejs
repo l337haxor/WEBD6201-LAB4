@@ -44,6 +44,20 @@
           <li id="contact" class="nav-item">
           <% } %>
           <a class="nav-link" href="/contact"><i class="fas fa-mobile-alt"></i> Contact Us</a></li>
+
+          <% if(title == 'contact-list') { %>
+            <li id="contact-list" class="nav-item active">
+            <% } else { %>
+            <li id="contact-list" class="nav-item">
+            <% } %>
+            <a class="nav-link" href="/contact-list"><i class="fas fa-mobile-alt"></i> Contact List</a></li>
+
+            <% if(title == 'Register') { %>
+              <li id="register" class="nav-item active">
+              <% } else { %>
+              <li id="register" class="nav-item">
+              <% } %>
+              <a class="nav-link" href="/register"><i class="fas fa-mobile-alt"></i> Register</a></li>
           
           <% if(typeof displayName == 'string' && displayName) { %>
           <li class="navbar-text"><i class="fas fa-lg fa-user"></i>

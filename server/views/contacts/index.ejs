@@ -13,7 +13,7 @@
                 <!-- Header Row -->
                 <tr>
                     <th class="text-center">First Name</th>
-                    <th class="text-center">Last Name</th>
+                    <th class="text-center">Email</th>
                     <th class="text-center">Contact Number</th>
                     <th class="text-center"></th>
                     <th class="text-center"></th>
@@ -23,7 +23,7 @@
                 <% for(let count = 0; count < contactList.length; count++) { %>
                 <tr>
                     <td class="text-center"><%= contactList[count].firstName %></td>
-                    <td class="text-center"><%= contactList[count].lastName %></td>
+                    <td class="text-center"><%= contactList[count].email %></td>
                     <td class="text-center"><%= contactList[count].contactNumber %></td>
                     <td class="text-center">
                         <a href="/contact-list/edit/<%= contactList[count]._id %>" 

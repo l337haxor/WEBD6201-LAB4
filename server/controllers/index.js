@@ -137,6 +137,7 @@ module.exports.processRegisterPage = (req, res, next) =>
     username: req.body.username,
     //password: req.body.password
     email: req.body.email,
+    contactnumber: req.body.contactnumber,
     displayName: req.body.displayName
   });
 

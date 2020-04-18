@@ -32,6 +32,12 @@ router.get('/products', (req, res, next) =>
     controllers.displayProducts(req, res, next);
 });
 
+/* GET projects page */
+router.get('/projects', (req, res, next) =>
+  {
+    controllers.displayProjects(req, res, next);
+});
+
 /* GET services page */
 router.get('/services', (req, res, next) =>
   {

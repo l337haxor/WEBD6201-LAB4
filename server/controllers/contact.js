@@ -33,8 +33,8 @@ module.exports.displayAddPage = (req, res, next) => {
 module.exports.processAddPage = (req, res, next) => {
     let newContact = contactModel({
         "firstName": req.body.firstName,
-        "lastName": req.body.lastName,
-        "contactNumber": req.body.contactNumber
+        "email": req.body.lastName,
+        "contactnumber": req.body.contactnumber
     });
 
     contactModel.create(newContact, (err, contactModel) =>

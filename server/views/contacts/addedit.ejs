@@ -8,22 +8,22 @@
 
             <form action="" class="form" method="POST">
                 <div class="form-group">
-                    <label for="FirstNameTextField">First Name</label>
+                    <label for="userNameTextField">user name</label>
                     <input type="text" class="form-control" 
                     id="FirstNameTextField" 
-                    placeholder="Enter First Name"
+                    placeholder="Enter username"
                     name="firstName" 
-                    value="<%= contact.firstName %>"
+                    value="<%= contact.username %>"
                     required>
                 </div>
 
                 <div class="form-group">
-                    <label for="LastNameTextField">Last Name</label>
+                    <label for="EmailTextField">Email</label>
                     <input type="text" class="form-control" 
-                    id="LastNameTextField" 
-                    placeholder="Enter Last Name"
+                    id="EmailTextField" 
+                    placeholder="Enter Email"
                     name="lastName" 
-                    value="<%= contact.lastName %>"
+                    value="<%= contact.email %>"
                     required>
                 </div>
 
@@ -33,7 +33,7 @@
                     id="ContactNumberTextField" 
                     placeholder="Enter Contact Number"
                     name="contactNumber" 
-                    value="<%= contact.contactNumber %>"
+                    value="<%= contact.contactnumber %>"
                     required>
                 </div>
 
