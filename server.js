@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-let app = require('./app');
+let app = require('./server/config/app');
 let debug = require('debug')('webd6201-w2020-lesson9:server');
 let http = require('http');
 
@@ -12,7 +12,7 @@ let http = require('http');
  * Get port from environment and store in Express.
  */
 
-let port = normalizePort(process.env.PORT || '8080');
+let port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 /**

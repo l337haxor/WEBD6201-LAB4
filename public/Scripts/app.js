@@ -1,7 +1,7 @@
 /*
     Student Name  : Sterling Wenzelbach
     StudentID     : 100299329
-    Date Completed: 2020-04-04
+    Date Completed: 2020-04-17
 */
 
 //Used to collect form information from the contact page
