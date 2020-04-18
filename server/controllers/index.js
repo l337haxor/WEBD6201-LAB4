@@ -35,6 +35,15 @@ module.exports.displayContact = (req, res, next) =>
   });
 }
 
+module.exports.displayProjects = (req, res, next) =>
+{
+  res.render('index',
+  {
+    title: 'Projects',
+    displayName: req.user ? req.user.displayName : ""
+  });
+}
+
 module.exports.displayProducts = (req, res, next) =>
 {
   res.render('index',
