@@ -1,7 +1,7 @@
 // require modules for our user Model
 let mongoose = require('mongoose');
 let passportLocalMongoose = require('passport-local-mongoose');
-
+//A user, takes a username,email and contact number
 let userSchema = mongoose.Schema({
     username: 
     {
